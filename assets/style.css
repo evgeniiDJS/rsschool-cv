@@ -1,21 +1,24 @@
 body {
     font-family: 'Times New Roman', Times, serif;
-    padding: 0;
-    margin: 0;
     color: rgb(85, 76, 76);
     font-size: 14px;
-    
+    background-color: aqua;
 }
 
 img {
-    margin-top: 20px;
+    width: 210px;
+    height: 200px;
+    margin-top: 10px;
     border-radius: 50%;
+    border: 3px solid 808080;
 }
 
 p,
 li {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     line-height: 1.55em;
+    padding: 0;
+    margin: 0;
 }
 
 div {
@@ -23,15 +26,76 @@ div {
     box-sizing: border-box;
 }
 
-.container {
-    width: 1000px;
-    margin: 0 auto;
-    background-color: #F5F5DC;
+h1 {
+    font-size: 35px;
+    font-style: italic;
 }
 
-.tel {
-    float: right;
-    margin-right: 50px ;
+.text {
+    width: 500px;
+    height: 30px;
+    border-bottom: 2px solid #808080;
 }
+
+.container {
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+aside {
+    padding: 10px;
+    text-align: center;
+    background: #f0f0f0;
+    padding: 10px;
+    width: 300px;
+    float: left;
+}
+
+article {
+    padding: 10px;
+    width: 500px;
+    float: right;
+    display: block;
+}
+
+footer {
+    height: 80px;
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #5a4a4a;
+}
+
+.shool {
+    display: flex;
+}
+
+.logo-git {
+    
+    width: 30px;
+    height: 30px;
+    background-color: rgb(66, 65, 65);
+    border: 2px solid rgb(66, 65, 65);
+}
+
+.link-git {
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 15px;
+    margin-top: 23px;
+}
+
+.date {
+    color: #ffffff;
+    padding: 20px 0 0 200px;
+}
+
+.logo-shool {
+    margin: 0 0 0 450px;
+    width: 100px;
+    height: 70px;
+}
+
 
 
