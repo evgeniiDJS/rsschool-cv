@@ -9,3 +9,30 @@ Punctuality, responsibility, decency, the ability to teach, perseverance, patien
 4.  Monitoring of network health and network equipment
 5.  Information security support
 6.  UML
+the work efficiently.
+## *Code examples:*
+`` class PinLogin {
+    constructor({el, loginEndpoint, redirectTo, maxNumbers = Infinity}){
+        this.el = {
+            main: el,
+            numPad: el.querySelector('.pin-login__numpad'),
+            textDisplay: el.querySelector('.pin-login__text'),
+        };
+
+        this.loginEndpoint = loginEndpoint;
+        this.redirectTo = redirectTo;
+        this.maxNumbers = maxNumbers;
+        this.value = '';
+
+        this._generatePad();
+    } ``
+
+## *Work experience:*
+Junior Dev : [Git](https://github.com/BorisVian1/testingApp 'GitHub').
+## *Education:*
+* Institute: Volga State University of Telecommunications and Informatics;
+* Faculty: Information Systems and Technologies;
+* Form: correspondence;
+* Year of graduation: 2019.
+## *English language:*
+А1. Breakthrough or beginner.
