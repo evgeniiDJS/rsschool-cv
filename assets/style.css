@@ -51,8 +51,8 @@ nav {
 }
 
 .titles img {
-    max-width: 400px;
-    height: 230px;
+    max-width: 265px;
+    height: 220px;
     border-radius: 50%;
     border: 2px solid #380066;
     box-shadow: 10px 10px 10px #802e88;
@@ -94,11 +94,7 @@ nav {
 }
 
 #skills {
-    height: 50vh;
-}
-
-.title {
-   
+    height: 60vh;
 }
 
 .title h2 {
