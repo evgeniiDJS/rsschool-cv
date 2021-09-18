@@ -5,84 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten&display=swap" rel="stylesheet">
     <title>HTML, CSS & Git Basics</title>
 </head>
 <body>
-    <div class="container">
-        <aside>
-            <div class="name">
-                <img src="./assets/img/my_foto.jpg" alt="foto">
-                <h1 style="margin: 0; padding: 0;">Evgenii</h1>
-                <h1 style="margin: 0; padding: 0;">Dor</h1>
-            </div>
-            <div class="contact">
-                <p>Link: <a href="https://t.me/EvgeAlex">Telegram</a></p>
-            </div>
-            <div class="information">
-                <h2>Information about yourself:</h2>
-                <p>Punctuality, responsibility, decency, the ability to teach, perseverance, patience, the ability to focus on details, the desire for professional development, love                   for the IT field, accuracy, the habit of bringing what has been started to the end, to do the work efficiently.</p>
-            </div>
-        </aside>
-       <article>
-        <div class="skills">
-            <h2 class="text">Skills:</h2>
+   <header>
+       <div class="container">
             <nav>
-                <ol>
-                    <li>Knowledge of the basics of modern data transmission networks.</li>
-                    <li>Site layout (HTML + CSS+ Bootstrap+ Adobe Photoshop).</li>
-                    <li>Administration of Linux and Windows servers.</li>
-                    <li>Monitoring of network health and network equipment.</li>
-                    <li>Information security support.</li>
-                    <li>UML.</li>
-            </nav>
-        </div>
-        <div class="code">
-            <h2 class="text">Code examples:</h2>
-            <p>class PinLogin {
-                constructor({el, loginEndpoint, redirectTo, maxNumbers = Infinity}) { <br>
-                    this.el = { <br>
-                        main: el, <br>
-                        numPad: el.querySelector('.pin-login__numpad'), <br>
-                        textDisplay: el.querySelector('.pin-login__text', <br>
-                    }; <br>
-                    this.loginEndpoint = loginEndpoint; <br>
-                    this.redirectTo = redirectTo; <br>
-                    this.maxNumbers = maxNumbers; <br>
-                    this.value = ''; <br>
-            
-                    this._generatePad(); <br>
-                }
-            </p>
-        </div>
-        <div class="work">
-            <h2 class="text">Work experience:</h2>
-            <p>Junior Dev : <a href="https://github.com/BorisVian1/testingApp">GitHub</a></p>
-        </div>
-        <div class="educ">
-            <h2 class="text">Education:</h2>
-            <nav>
-                <ul>
-                    <li>Institute: Volga State University of Telecommunications and Informatics;</li>
-                    <li>Faculty: Information Systems and Technologies;</li>
-                    <li>Form: correspondence;</li>
-                    <li>Year of graduation: 2019.</li>
+                <ul class="menu">
+                    <li><a href="#information">Information about yourself</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#code">Code examples</a></li>
+                    <li><a href="#work">Work experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#english">English language</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <div class="titles">
+                <img src="./assets/img/my_foto.jpg" alt="myfoto">
+                <div class="titles__first">
+					Hi, my name is Evgenii 
+				</div>
+                <h1>
+                    Front-End Developer
+                </h1>
+            </div>
+       </div>
+    </header>
+    <section id="information">
+        <div class="container">
+            <div class="title-info">
+                <h2>
+                    information about yourself:
+                </h2>
+                <p>
+                    Punctuality, responsibility, decency, the ability to teach, perseverance, patience, the ability to focus on details, the desire for professional development, love for the IT field, accuracy, the habit of bringing what has been started to the end, to do the work efficiently.
+                </p>
+            </div>
         </div>
-        <div class="eng">
-            <h2 class="text">English language:</h2>
-            <p>А1. Breakthrough or beginnerр2</p>
+    </section>
+    <section id="skills">
+        <div class="container">
+            <div class="title">
+                <h2>
+                    Skills:
+                </h2>
+               <ol>
+                   <li>Knowledge of the basics of modern data transmission networks.</li>
+                   <li>Site layout (HTML + CSS+ Bootstrap+ Adobe Photoshop).</li>
+                   <li>Administration of Linux and Windows servers.</li>
+                   <li>Monitoring of network health and network equipment.</li>
+                   <li>Information security support.</li>
+                   <li>UML the work efficiently.</li>
+               </ol>
+            </div>
         </div>
-    </div>
-       </article>
-</header>
-<footer>
-    <div class="shool">
-        <img class="logo-git" src="./assets/img/github.svg" alt="logo">
-        <a class="link-git" href="https://github.com/evgeniiDJS">Visit my Git-Hub</a>
-        <p class="date">© 2021</p>
-        <a href="https://rs.school/js/"><img class="logo-shool" src="./assets/img/rsschool.svg" alt="logo-1"></a>
-    </div>
- </footer>
+    </section>
+    <section id="code">
+        <div class="container">
+            
+        </div>
+    </section>
+    <section id="work"><div class="container"></div></section>
+    <section id="education"><div class="container"></div></section>
+    <section id="english"><div class="container"></div></section>
+    <section id="contact"><div class="container"></div></section>
+    <footer><div class="container"></div></footer>
 </body>
 </html>

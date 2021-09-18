@@ -1,101 +1,112 @@
 body {
-    font-family: 'Times New Roman', Times, serif;
-    color: rgb(85, 76, 76);
-    font-size: 14px;
-    background-color: rgb(211, 233, 233);
-}
-
-img {
-    width: 210px;
-    height: 200px;
-    margin-top: 10px;
-    border-radius: 50%;
-    border: 3px solid 808080;
-}
-
-p,
-li {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    line-height: 1.55em;
+    font-family: 'Merriweather', serif;
     padding: 0;
     margin: 0;
+    background-color: #fff785;
+    font-size: 16px;
+    color: #802e88;
 }
 
 div {
-    margin-left: 50px; 
     box-sizing: border-box;
 }
 
-h1 {
-    font-size: 35px;
-    font-style: italic;
-}
-
-.text {
-    width: 500px;
-    height: 30px;
-    border-bottom: 2px solid #808080;
+header {
+    height: 100vh;
 }
 
 .container {
-    display: flex;
-    width: 1000px;
+    max-width: 1190px;
     margin: 0 auto;
-    background-color: #ffffff;
 }
 
-aside {
-    padding: 10px;
-    text-align: center;
-    background: #f0f0f0;
-    padding: 10px;
-    width: 300px;
-    float: left;
-}
-
-article {
-    padding: 10px;
-    width: 500px;
+nav {
     float: right;
-    display: block;
+    margin-top: 45px;
+    padding-bottom: 45px;
 }
 
-footer {
-    height: 80px;
-    width: 1000px;
-    margin: 0 auto;
-    background-color: #5a4a4a;
-}
-
-.shool {
+.menu {
+    padding: 0;
+    margin: 0;
     display: flex;
 }
 
-.logo-git {
-    
-    width: 30px;
-    height: 30px;
-    background-color: rgb(66, 65, 65);
-    border: 2px solid rgb(66, 65, 65);
+.menu li {
+    margin-right: 31px;
+    list-style: none;
 }
 
-.link-git {
+.menu a {
+    font-family: 'Merriweather', serif;
+    color: #380066;
     text-decoration: none;
-    color: #ffffff;
-    margin-left: 15px;
-    margin-top: 23px;
+    text-transform: uppercase;
+    font-size: 16px;
 }
 
-.date {
-    color: #ffffff;
-    padding: 20px 0 0 200px;
+.titles {
+    text-align: center;
+    padding-top: 15px;
 }
 
-.logo-shool {
-    margin: 0 0 0 450px;
-    width: 100px;
-    height: 70px;
+.titles img {
+    max-width: 400px;
+    height: 230px;
+    border-radius: 50%;
+    border: 2px solid #380066;
+    box-shadow: 10px 10px 10px #802e88;
 }
 
+.titles__first {
+    margin-top: 25px;
+    font-family:'Grechen Fuemen', cursive;
+    font-size: 47px;
+    color: #802e88;
+}
 
+.titles h1 {
+    color: #380066;
+    font-family:'Gluten', cursive;
+    font-size: 75px;
+}
 
+#information {
+    height: 50vh;
+}
+
+.title-info {
+    background-color: #802e88;
+    height: 40vh;
+}
+
+.title-info h2 {
+    color: #ffff;
+    padding: 20px;
+}
+
+.title-info p {
+    padding: 0 30px;
+    margin-top: 20px;
+    color: #ffff;
+    line-height: 3.0em;
+    font-style: italic;
+}
+
+#skills {
+    height: 50vh;
+}
+
+.title {
+   
+}
+
+.title h2 {
+   padding: 0 20px; 
+}
+
+.title ol {
+    margin-left: 30px;
+    line-height: 3.0em;
+    font-style: italic;
+}
