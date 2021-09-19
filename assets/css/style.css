@@ -51,6 +51,10 @@ nav {
     font-size: 16px;
 }
 
+.menu a:hover {
+    font-size: 18px;
+}
+
 .titles {
     text-align: center;
     padding-top: 15px;
@@ -64,7 +68,12 @@ nav {
     box-shadow: 0px 0px 30px #443d44;
 }
 
+.titles img:hover {
+    box-shadow: 0px 0px 40px #443d44;
+}
+
 .titles__first {
+    cursor: default;
     margin: 0 auto;
     max-width: 500px;
     margin-top: 25px;
@@ -74,6 +83,7 @@ nav {
 }
 
 .titles h1 {
+    cursor: default;
     padding-top: 25px;
     margin: 0 auto;
     max-width: 1000px;
@@ -87,16 +97,18 @@ nav {
 }
 
 .title-info {
+    max-width: 1190px;
     background-color: #802e88;
-    height: 40vh;
 }
 
 .title-info h2 {
+    max-width: 350px;
     color: #ffff;
     padding: 20px;
 }
 
 .title-info p {
+    max-width: 1100px;
     padding: 0 30px;
     margin-top: 20px;
     color: #ffff;
@@ -109,7 +121,8 @@ nav {
 }
 
 .title h2 {
-   padding: 0 20px; 
+    max-width: 70px;
+    padding: 0 20px; 
 }
 
 .title ol {
@@ -119,19 +132,33 @@ nav {
 }
 
 #code {
-    height: 60vh;
+    height: 70vh;
 }
 
 .title-code h2 {
-    padding: 0 20px;
+    max-width: 200px;
+    padding: 0 20px; 
 }
 
 #work {
     height: 20vh;
 }
 
+.title-work h2 {
+    max-width: 250px;
+    padding: 0 20px; 
+}
+
+.title-work p {
+    max-width: 150px;
+}
 #education {
     height: 50vh;
+}
+
+.title-education h2 {
+    max-width: 200px;
+    padding: 0 20px; 
 }
 
 .title-education ul {
@@ -144,8 +171,26 @@ nav {
     height: 20vh;
 }
 
+.title-english h2 {
+    max-width: 250px;
+    padding: 0 20px;
+}
+
+.title-english p {
+    max-width: 250px;
+}
+
 #contact {
     height: 20vh;
+}
+
+.title-contact h2 {
+    max-width: 200px;
+    padding: 0 20px;
+}
+
+.title-contact p {
+    max-width: 150px;
 }
 
 footer {
@@ -154,6 +199,25 @@ footer {
 
 .page-footer {
     display: flex;
+}
+
+.page-footer p {
+    max-width: 150px;
+    cursor: default;
+    text-align: center;
+}
+
+.git {
+    max-width: 150px;
+    padding-top: 10px;
+    margin-left: 500px;
+}
+
+.school {
+    flex-grow: 2;
+    margin-left: 500px;
+    max-width: 50px;
+    height: 50px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -227,6 +291,15 @@ footer {
     .menu li {
         width: 100%;
     }
+    .title-info {
+        width: 100%;
+        line-height: 0.05em; 
+     }
+     
+     .title-info h2 {
+         width: 100%;
+         margin-top: 100px;
+     }
 }
 
 @media screen and (max-width: 767px) {
@@ -255,6 +328,7 @@ footer {
     .menu a {
         font-size: 14px;
     }
+    
 
 }
 
@@ -264,4 +338,84 @@ footer {
         padding: 0 15px;
     }
     
+}
+
+.wrapper{
+  max-width: 1024px;
+  padding: 10px;
+  margin: 0px auto;
+}
+
+.menuToggle{  
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: none;
+}
+
+@media( max-width: 640px){
+    .menuToggle{
+        display: block;
+    }
+    .menu{
+        margin-top: 25px;
+        display: none;
+        position: absolute;
+        background: none;
+        width: 100%;
+        margin-left: -10px;
+        padding-left: 10px;
+    }
+    .menu li{
+        padding-top: 10px;
+        display: block;
+    }
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.hamburger {
+    width: 40px;
+    height: 4px;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    transition: 0.5s;
+    display: inline-block;
+    margin-left: 12px;
+}
+
+.hamburger:before,
+.hamburger:after {
+    content: "";
+    width: 40px;
+    height: 4px;
+    position: absolute;
+    background: #fff;
+    transition: 0.5s;
+}
+
+.hamburger:before {
+    top: -16px;
+}
+
+.hamburger:after {
+    top: 16px;
+}
+
+.icon.active .hamburger {
+    background: rgba(0, 0, 0, 0);
+}
+
+.icon.active .hamburger:before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.icon.active .hamburger:after {
+    top: 0;
+    transform: rotate(135deg);
 }

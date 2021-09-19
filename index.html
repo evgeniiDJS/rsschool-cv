@@ -22,6 +22,9 @@
    <header>
        <div class="container">
             <nav>
+                <div class="menuToggle icon">
+                    <div class="hamburger"></div>
+                </div>
                 <ul class="menu">
                     <li><a href="#information">Information</a></li>
                     <li><a href="#skills">Skills</a></li>
@@ -152,14 +155,24 @@
     <footer>
         <div class="container">
             <div class="page-footer">
-                    <p>© 2021 by Maria Serykh</p>
-                    <ul>
-                        <li>Github</li>
-                        <li><a href=""><img src="" alt=""></a></li>
-                    </ul>
+                    <p>© 2021</p>
+                    <a class="git" href="https://github.com/evgeniiDJS">Github</a>
+                    <a class="school" href="https://github.com/rolling-scopes-school/tasks/tree/master/stage1"><img src="./assets/img/rs_school_js.svg" alt=""></a>
             </div>
         </div>
     </footer>
+    <script type="text/javascript">
+        $(document).ready(function() {
+        $(".menuToggle").click(function() {
+        $(this).toggleClass("active");
+        $('.menu').slideToggle(300, function(){
+            if($(this).css('display') === "none"){
+            $(this).removeAttr('style');
+      }
+    });
+  });
+});
+    </script>
     <script type="text/javascript">
         $(function(){
                 $("a[href^='#']").click(function(){
