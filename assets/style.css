@@ -54,8 +54,8 @@ nav {
     max-width: 265px;
     height: 220px;
     border-radius: 50%;
-    border: 2px solid #380066;
-    box-shadow: 10px 10px 10px #802e88;
+    border: 1px solid #380066;
+    box-shadow: 0px 0px 30px #443d44;
 }
 
 .titles__first {
@@ -106,3 +106,42 @@ nav {
     line-height: 3.0em;
     font-style: italic;
 }
+
+#code {
+    height: 30vh;
+}
+
+.title-code h2 {
+    padding: 0 20px;
+}
+
+#work {
+    height: 30vh;
+}
+
+#education {
+    height: 60vh;
+}
+
+.title-education ul {
+    margin-left: 30px;
+    line-height: 3.0em;
+    font-style: italic;
+}
+
+#english {
+    height: 30vh;
+}
+
+#contact {
+    height: 30vh;
+}
+
+footer {
+    height: 20vh;
+}
+
+.page-footer {
+    display: flex;
+}
+
