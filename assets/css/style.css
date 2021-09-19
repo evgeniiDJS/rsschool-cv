@@ -2,7 +2,7 @@ body {
     font-family: 'Merriweather', serif;
     padding: 0;
     margin: 0;
-    background-color: #fff785;
+    background-color: #ffff85;
     font-size: 16px;
     color: #802e88;
 }
@@ -21,18 +21,24 @@ header {
 }
 
 nav {
+    margin: 0 auto;
+    width: 1200px;
     float: right;
     margin-top: 45px;
     padding-bottom: 45px;
 }
 
 .menu {
+    margin: 0 auto;
+    max-width: 1200px;
     padding: 0;
     margin: 0;
     display: flex;
 }
 
 .menu li {
+    margin: 0 auto;
+    max-width: 200px;
     margin-right: 31px;
     list-style: none;
 }
@@ -59,6 +65,8 @@ nav {
 }
 
 .titles__first {
+    margin: 0 auto;
+    max-width: 500px;
     margin-top: 25px;
     font-family:'Grechen Fuemen', cursive;
     font-size: 47px;
@@ -66,6 +74,9 @@ nav {
 }
 
 .titles h1 {
+    padding-top: 25px;
+    margin: 0 auto;
+    max-width: 1000px;
     color: #380066;
     font-family:'Gluten', cursive;
     font-size: 75px;
@@ -105,4 +116,152 @@ nav {
     margin-left: 30px;
     line-height: 3.0em;
     font-style: italic;
+}
+
+#code {
+    height: 60vh;
+}
+
+.title-code h2 {
+    padding: 0 20px;
+}
+
+#work {
+    height: 20vh;
+}
+
+#education {
+    height: 50vh;
+}
+
+.title-education ul {
+    margin-left: 30px;
+    line-height: 3.0em;
+    font-style: italic;
+}
+
+#english {
+    height: 20vh;
+}
+
+#contact {
+    height: 20vh;
+}
+
+footer {
+    height: 10vh;
+}
+
+.page-footer {
+    display: flex;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+    .titles__first {
+        width: 100%;
+    }
+    .titles h1 {
+        width: 100%;
+    }
+    .titles img {
+        width: 100%;
+    }
+    nav {
+        width: 100%;
+    }
+    .menu {
+        width: 100%;
+    }
+    .menu li {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .container {
+        width: 960px;
+    }
+    .titles__first {
+        width: 100%;
+    }
+    .titles h1 {
+        width: 100%;
+    }
+    .titles img {
+        width: 100%;
+    }
+    nav {
+        width: 100%;
+    }
+    .menu {
+        width: 100%;
+    }
+    .menu li {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+    .container {
+        width: 720px;
+    }
+    .titles__first {
+        width: 100%;
+    }
+    .titles h1 {
+        width: 100%;
+    }
+    .titles img {
+        width: 100%;
+    }
+    nav {
+        width: 100%;
+    }
+    .menu {
+        width: 100%;
+    }
+    .menu li {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        width: 540px;
+    }
+    .titles__first {
+        width: 100%;
+    }
+    .titles h1 {
+        width: 100%;
+    }
+    .titles img {
+        width: 100%;
+    }
+    nav {
+        width: 100%;
+    }
+    .menu {
+        width: 100%;
+    }
+    .menu li {
+        margin: 2px;
+        width: 100%;
+    }
+    .menu a {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+    
 }
