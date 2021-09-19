@@ -1,0 +1,108 @@
+body {
+    font-family: 'Merriweather', serif;
+    padding: 0;
+    margin: 0;
+    background-color: #fff785;
+    font-size: 16px;
+    color: #802e88;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+header {
+    height: 100vh;
+}
+
+.container {
+    max-width: 1190px;
+    margin: 0 auto;
+}
+
+nav {
+    float: right;
+    margin-top: 45px;
+    padding-bottom: 45px;
+}
+
+.menu {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 31px;
+    list-style: none;
+}
+
+.menu a {
+    font-family: 'Merriweather', serif;
+    color: #380066;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.titles {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.titles img {
+    max-width: 265px;
+    height: 220px;
+    border-radius: 50%;
+    border: 1px solid #380066;
+    box-shadow: 0px 0px 30px #443d44;
+}
+
+.titles__first {
+    margin-top: 25px;
+    font-family:'Grechen Fuemen', cursive;
+    font-size: 47px;
+    color: #802e88;
+}
+
+.titles h1 {
+    color: #380066;
+    font-family:'Gluten', cursive;
+    font-size: 75px;
+}
+
+#information {
+    height: 50vh;
+}
+
+.title-info {
+    background-color: #802e88;
+    height: 40vh;
+}
+
+.title-info h2 {
+    color: #ffff;
+    padding: 20px;
+}
+
+.title-info p {
+    padding: 0 30px;
+    margin-top: 20px;
+    color: #ffff;
+    line-height: 3.0em;
+    font-style: italic;
+}
+
+#skills {
+    height: 60vh;
+}
+
+.title h2 {
+   padding: 0 20px; 
+}
+
+.title ol {
+    margin-left: 30px;
+    line-height: 3.0em;
+    font-style: italic;
+}
