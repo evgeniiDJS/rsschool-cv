@@ -136,6 +136,9 @@ nav {
     height: 70vh;
 }
 
+.adapt {
+    max-width: 890px;
+}
 .title-code h2 {
     max-width: 200px;
     padding: 0 20px; 
@@ -251,9 +254,11 @@ footer {
     }
     .titles__first {
         width: 100%;
+        font-size: 44px;
     }
     .titles h1 {
         width: 100%;
+        font-size: 74px;
     }
     .titles img {
         width: 100%;
@@ -276,9 +281,11 @@ footer {
     }
     .titles__first {
         width: 100%;
+        font-size: 44px;
     }
     .titles h1 {
         width: 100%;
+        font-size: 64px;
     }
     .titles img {
         width: 100%;
@@ -298,8 +305,12 @@ footer {
      }
      
      .title-info h2 {
-         width: 100%;
-         margin-top: 50px;
+        width: 100%;
+        margin-top: 50px;
+     }
+     .adapt {
+        width: 100%;
+        font-size: 16px;
      }
 }
 
@@ -309,9 +320,11 @@ footer {
     }
     .titles__first {
         width: 100%;
+        font-size: 34px;
     }
     .titles h1 {
         width: 100%;
+        font-size: 44px;
     }
     .titles img {
         width: 100%;
@@ -329,13 +342,56 @@ footer {
     .menu a {
         font-size: 14px;
     }
-    
+    .adapt {
+        width: 100%;
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 575px) {
     .container {
         width: 100%;
         padding: 0 15px;
+    }
+
+    .titles__first {
+        width: 100%;
+        font-size: 24px;
+    }
+    .titles h1 {
+        width: 100%;
+        font-size: 24px;
+    }
+    .titles img {
+        width: 100%;
+    }
+    .title-info {
+        width: 100%;
+        
+     }
+     
+     .title-info h2 {
+         width: 100%;
+        font-size: 18px;
+     }
+
+     .title-info p {
+        line-height: 1.55em;
+     }
+
+    .title h2 {
+        width: 100%;
+        font-size: 24px;
+    }
+    
+    .title ol {
+        font-size: 14px;
+        font-style: italic;
+    }
+
+    .adapt {
+        width: 100%;
+        font-size: 12px;
     }
     
 }
