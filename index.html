@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/arduino-light.min.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/arduino-light.min.css">
     <title>HTML, CSS & Git Basics</title>
+    <link href="./assets/Space.png" rel="shortcut icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
@@ -16,7 +16,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gluten&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./js/highlight.min.js"></script>
 </head>
 <body>
    <header>
@@ -38,7 +39,7 @@
             <div class="titles">
                 <img src="./assets/img/my_foto.jpg" alt="myfoto">
                 <div class="titles__first">
-					Hi, my name is Evgenii  
+					Hi, my name is Evgenii
 				</div>
                 <h1>
                     Front-End Developer
@@ -82,7 +83,7 @@
                     Code examples:
                 </h2>
                 <pre>
-                <code class="js">
+                <code class="js adapt">
                 class PinLogin { constructor({el, loginEndpoint, redirectTo, maxNumbers = Infinity})  
                 { this.el = { main: el, 
                 numPad: el.querySelector(‘.pin-login__numpad’), 
@@ -106,9 +107,23 @@
                 <h2>
                     Work experience:
                 </h2>
-                <p>
-                    Junior Dev : <a href="https://github.com/BorisVian1/testingApp">Git</a>
-                </p>
+                <div class="work__project">
+                    <a href="https://rolling-scopes-school.github.io/evgeniidjs-JSFE2021Q3/museum-adaptive/" target="_blank" class="work-item">
+                        <img src="./assets/png/Mona.png" alt="mona">
+                        <h3>Museum</h3>
+                        <p>Adaptiv & Layout</p>
+                    </a>
+                    <a href="https://rs-school-momentum.netlify.app" target="_blank" class="work-item">
+                        <img src="./assets/png/momentum.png" alt="Momentum">
+                        <h3>Project Momentum</h3>
+                        <p>analog of the application of the same name</p>
+                    </a>
+                    <a href="https://virtuals-keyboard.netlify.app" target="_blank" class="work-item">
+                        <img src="./assets/png/Keys.png" alt="keyboard">
+                        <h3>Project Virtuals-Keyboard</h3>
+                        <p>virtual keyboard</p>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -147,7 +162,7 @@
                     Contact:
                 </h2>
                 <p>
-                    <a href="https://t.me/EvgeAlex">Telegram</a>
+                   <a href="https://t.me/EvgeAlex">Telegram</a>
                 </p>
             </div>
         </div>
@@ -157,13 +172,10 @@
             <div class="page-footer">
                     <p>© 2021</p>
                     <a class="git" href="https://github.com/evgeniiDJS">Github</a>
-                    <a class="school" href="https://github.com/rolling-scopes-school/tasks/tree/master/stage1"><img src="./assets/img/rs_school_js.svg" alt=""></a>
+                    <a class="school" href="https://app.rs.school/registry/student?course=js-fe-2021Q3"><img src="./assets/img/rs_school_js.svg" alt=""></a>
             </div>
         </div>
     </footer>
-    <script src="./assets/js/burger-menu.js"></script>
-    <script src="./assets/js/scroll.js"></script>
-    <script src="http://yastatic.net/highlightjs/8.2/highlight.min.js"/></script>
-    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+    <script src="./index.js" type="module"></script>
 </body>
 </html>
