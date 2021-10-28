@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/arduino-light.min.css">
+    <title>HTML, CSS & Git Basics</title>
+    <link href="./assets/Space.png" rel="shortcut icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./js/highlight.min.js"></script>
+</head>
+<body>
+   <header>
+       <div class="container">
+            <nav>
+                <div class="menuToggle icon">
+                    <div class="hamburger"></div>
+                </div>
+                <ul class="menu">
+                    <li><a href="#information">Information</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#code">Code</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#english">English</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="titles">
+                <img src="./assets/img/my_foto.jpg" alt="myfoto">
+                <div class="titles__first">
+					Hi, my name is Evgenii
+				</div>
+                <h1>
+                    Front-End Developer
+                </h1>
+            </div>
+       </div>
+    </header>
+    <section id="information">
+        <div class="container">
+            <div class="title-info">
+                <h2>
+                    information about yourself:
+                </h2>
+                <p>
+                    Punctuality, responsibility, decency, the ability to teach, perseverance, patience, the ability to focus on details, the desire for professional development, love for the IT field, accuracy, the habit of bringing what has been started to the end, to do the work efficiently.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="container">
+            <div class="title">
+                <h2>
+                    Skills:
+                </h2>
+               <ol>
+                   <li>Knowledge of the basics of modern data transmission networks.</li>
+                   <li>Site layout (HTML + CSS+ Bootstrap+ Adobe Photoshop).</li>
+                   <li>Administration of Linux and Windows servers.</li>
+                   <li>Monitoring of network health and network equipment.</li>
+                   <li>Information security support.</li>
+                   <li>UML the work efficiently.</li>
+               </ol>
+            </div>
+        </div>
+    </section>
+    <section id="code">
+        <div class="container">
+            <div class="title-code">
+                <h2>
+                    Code examples:
+                </h2>
+                <pre>
+                <code class="js adapt">
+                class PinLogin { constructor({el, loginEndpoint, redirectTo, maxNumbers = Infinity})  
+                { this.el = { main: el, 
+                numPad: el.querySelector(‘.pin-login__numpad’), 
+                textDisplay: el.querySelector(‘.pin-login__text’), 
+                };
+    
+                this.loginEndpoint = loginEndpoint;
+                this.redirectTo = redirectTo;
+                this.maxNumbers = maxNumbers;
+                this.value = '';
+                    
+                this._generatePad(); }   
+                </code>
+                </pre>
+            </div>
+        </div>
+    </section>
+    <section id="work">
+        <div class="container">
+            <div class="title-work">
+                <h2>
+                    Work experience:
+                </h2>
+                <div class="work__project">
+                    <a href="https://rolling-scopes-school.github.io/evgeniidjs-JSFE2021Q3/museum-adaptive/" target="_blank" class="work-item">
+                        <img src="./assets/png/Mona.png" alt="royal-palace">
+                        <h3>Museum</h3>
+                        <p>Adaptiv & Layout</p>
+                    </a>
+                    <a href="https://rs-school-momentum.netlify.app" target="_blank" class="work-item">
+                        <img src="./assets/png/momentum.png" alt="Momentum">
+                        <h3>Project Momentum</h3>
+                        <p>analog of the application of the same name</p>
+                    </a>
+                    <a href="https://virtuals-keyboard.netlify.app" target="_blank" class="work-item">
+                        <img src="./assets/png/Keys.png" alt="keyboard">
+                        <h3>Project Virtuals-Keyboard</h3>
+                        <p>virtual keyboard</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="education">
+        <div class="container">
+            <div class="title-education">
+                <h2>
+                    Education:
+                </h2>
+                <ul>
+                    <li>Institute: Volga State University of Telecommunications and Informatics;</li>
+                    <li>Faculty: Information Systems and Technologies;</li>
+                    <li>Form: correspondence;
+                    </li>
+                    <li>Year of graduation: 2019.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="english">
+        <div class="container">
+            <div class="title-english">
+                <h2>
+                    English language:
+                </h2>
+                <p>
+                    А1. Breakthrough or beginner.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div class="title-contact">
+                <h2>
+                    Contact:
+                </h2>
+                <p>
+                   <a href="https://t.me/EvgeAlex">Telegram</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="page-footer">
+                    <p>© 2021</p>
+                    <a class="git" href="https://github.com/evgeniiDJS">Github</a>
+                    <a class="school" href="https://app.rs.school/registry/student?course=js-fe-2021Q3"><img src="./assets/img/rs_school_js.svg" alt=""></a>
+            </div>
+        </div>
+    </footer>
+    <script src="./index.js" type="module"></script>
+</body>
+</html>
