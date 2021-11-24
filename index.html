@@ -17,15 +17,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gluten&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/adaptive.css">
     <script src="./js/highlight.min.js"></script>
 </head>
 <body>
-   <header>
+   <header class="header">
        <div class="container">
-            <nav>
-                <div class="menuToggle icon">
-                    <div class="hamburger"></div>
-                </div>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                <span></span>
+                </label>
+                <ul class="menu__box">
+                    <li><a href="#information">Information</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#code">Code</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#english">English</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <nav class="nav">
                 <ul class="menu">
                     <li><a href="#information">Information</a></li>
                     <li><a href="#skills">Skills</a></li>
@@ -37,7 +50,7 @@
                 </ul>
             </nav>
             <div class="titles">
-                <img src="./assets/img/my_foto.jpg" alt="myfoto">
+                <div class="avatars"></div>
                 <div class="titles__first">
 					Hi, my name is Evgenii
 				</div>
@@ -47,7 +60,7 @@
             </div>
        </div>
     </header>
-    <section id="information">
+    <section class="section" id="information">
         <div class="container">
             <div class="title-info">
                 <h2>
@@ -59,7 +72,7 @@
             </div>
         </div>
     </section>
-    <section id="skills">
+    <section class="section" id="skills">
         <div class="container">
             <div class="title">
                 <h2>
@@ -70,20 +83,20 @@
                    <li>Site layout (HTML + CSS[flex, grid] + Responsive Web Design + Sass + Figma + Adobe Photoshop).</li>
                    <li>Administration of Linux and Windows servers.</li>
                    <li>Monitoring of network health and network equipment.</li>
-                   <li>Information security support.</li>
+                   <li>Node.js</li>
                    <li>Webpack</li>
                </ol>
             </div>
         </div>
     </section>
-    <section id="code">
+    <section class="section" id="code">
         <div class="container">
             <div class="title-code">
                 <h2>
                     Code examples:
                 </h2>
                 <pre>
-                <code class="js adapt">
+                <code class="adapt">
                 class PinLogin { constructor({el, loginEndpoint, redirectTo, maxNumbers = Infinity})  
                 { this.el = { main: el, 
                 numPad: el.querySelector(‘.pin-login__numpad’), 
@@ -101,7 +114,7 @@
             </div>
         </div>
     </section>
-    <section id="work">
+    <section class="section" id="work">
         <div class="container">
             <div class="title-work">
                 <h2>
@@ -109,17 +122,17 @@
                 </h2>
                 <div class="work__project">
                     <a href="https://rolling-scopes-school.github.io/evgeniidjs-JSFE2021Q3/museum-adaptive/" target="_blank" class="work-item">
-                        <img src="./assets/png/Mona.png" alt="mona">
+                        <div class="icon__pro--museum"></div>
                         <h3>Museum</h3>
                         <p>Adaptiv & Layout</p>
                     </a>
                     <a href="https://rs-school-momentum.netlify.app" target="_blank" class="work-item">
-                        <img src="./assets/png/momentum.png" alt="Momentum">
+                        <div class="icon__pro--momentum"></div>
                         <h3>Project Momentum</h3>
                         <p>analog of the application of the same name</p>
                     </a>
                     <a href="https://virtuals-keyboard.netlify.app" target="_blank" class="work-item">
-                        <img src="./assets/png/Keys.png" alt="keyboard">
+                        <div class="icon__pro--keyboard"></div>
                         <h3>Project Virtuals-Keyboard</h3>
                         <p>virtual keyboard</p>
                     </a>
@@ -127,7 +140,7 @@
             </div>
         </div>
     </section>
-    <section id="education">
+    <section class="section" id="education">
         <div class="container">
             <div class="title-education">
                 <h2>
@@ -149,7 +162,7 @@
             </div>
         </div>
     </section>
-    <section id="english">
+    <section class="section" id="english">
         <div class="container">
             <div class="title-english">
                 <h2>
@@ -161,7 +174,7 @@
             </div>
         </div>
     </section>
-    <section id="contact">
+    <section class="section" id="contact">
         <div class="container">
             <div class="title-contact">
                 <h2>
@@ -173,12 +186,12 @@
             </div>
         </div>
     </section>
-    <footer>
+    <footer class="section">
         <div class="container">
             <div class="page-footer">
                     <p>© 2021</p>
                     <a class="git" href="https://github.com/evgeniiDJS">Github</a>
-                    <a class="school" href="https://app.rs.school/registry/student?course=js-fe-2021Q3"><img src="./assets/img/rs_school_js.svg" alt=""></a>
+                    <a class="school" href="https://app.rs.school/registry/student?course=js-fe-2021Q3"></a>
             </div>
         </div>
     </footer>
