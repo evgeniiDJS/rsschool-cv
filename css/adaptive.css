@@ -148,6 +148,88 @@
 
 
 @media screen and (max-width: 767px) {
+    .container {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .avatars {
+        margin-top: 30px;
+        width: 55%;
+        height: 45vh;
+    }
+
+    .titles {
+        display: flex;
+    }
+
+    .titles__first {
+        cursor: default;
+        width: 50%;
+        margin-top: 80px;
+        font-size: 16px;
+        line-height: 1.0em;
+    }
+
+    .titles h1 {
+        position: absolute;
+        top: 150px;
+        left: 200px;
+        width: 50%;
+        font-size: 16px;
+    }
+
+    #information {
+        display: none;
+    }
+
+    .title-code h2 {
+        width: 60%;
+    }
+
+    .adapt {
+        width: 100%;
+    }
+
+    .title-work h2 {
+        width: 80%;
+    }
+
+    .work__project .work-item {
+        border-radius: 50%;
+        width: 35%;
+    }
+    
+    .work__project .work-item h3 {
+        font-size: 14px;
+        padding-top: 18px;
+    }
+
+    .work__project .work-item p {
+        padding-top: 16px;
+        padding-bottom: 25px;
+        font-size: 14px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .icon__pro--museum {
+        border-radius: 50%;
+        width: 100%;
+        height: 35vh;
+    }
+    
+    .icon__pro--momentum {
+        border-radius: 50%;
+        width: 100%;
+        height: 35vh;
+    }
+    
+    .icon__pro--keyboard {
+        border-radius: 50%;
+        width: 100%;
+        height: 35vh;
+    }
     .nav {
         display: none;
     }
@@ -168,22 +250,18 @@
     .menu__btn > span::before,
     .menu__btn > span::after {
         display: block;
-        position: absolute;
+        position: relative;
         width: 100%;
         height: 2px;
         background-color: #380066;
     }
-    .off {
-        display: none;
-    }
-    .on {
-        display: block;
-    }
     .menu__btn > span::before {
+        position: relative;
         content: '';
         top: -8px;
     }
     .menu__btn > span::after {
+        position: relative;
         content: '';
         top: 8px;
     }
@@ -191,24 +269,27 @@
     /* контейнер меню */
     .menu__box {
         display: block;
-        position: fixed;
+        position: absolute;
         visibility: hidden;
         top: 0;
-        left: -100%;
-        width: 200px;
-        height: 100%;
+        left: 100%;
+        width: 300px;
+        height: 50%;
         margin: 0;
         padding: 50px 0;
         list-style: none;
         text-align: center;
-        background-color: #ECEFF1;
+        background-color: #802e88;
         box-shadow: 0 5px 6px rgba(0, 0, 0, .2);
+    }
+
+    .menu__box li a {
+        color: #ffff85;
     }
     /* элементы меню */
     .menu__item {
         display: block;
         padding: 12px 24px;
-        color: #333;
         font-family: 'Roboto', sans-serif;
         font-size: 20px;
         font-weight: 600;
