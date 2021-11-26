@@ -28,9 +28,25 @@ div {
 }
 
 .nav {
-    width: 100%;
+    width: 90%;
     display: block;
     margin: 0 auto;
+    position: fixed;
+    background-color: #ffff85;
+    height: 80px;
+    margin: 0 auto;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, .1);
+}
+
+.nav__none {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    position: fixed;
+    height: 80px;
+    margin: 0 auto;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, .1);
+    background-color: #1D262D;
 }
 
 .menu {
@@ -48,7 +64,7 @@ div {
     width: 100%;
 }
 
-.menu a {
+.btn__menu {
     display: inline-block;
     line-height: 1;
     cursor: pointer;
@@ -60,6 +76,7 @@ div {
     font-size: 16px;
     transition: all 0.5s;
 }
+
 
 .menu a:after {
     display: block;
@@ -84,10 +101,11 @@ div {
 
 .titles {
     text-align: center;
-    padding-top: 15px;
+    padding-top: 125px;
 }
 
 .avatars {
+    margin: 0 auto;
     background-image: url("./assets/img/my_foto.jpg");
     background-repeat: no-repeat;
     border-radius: 50%;
@@ -97,7 +115,6 @@ div {
     display: block;
     width: 25%;
     height: 40vh;
-    margin: 0 auto;
     box-shadow: 0px 0px 10px #443d44;
     transition: 2s;
 }
@@ -115,8 +132,17 @@ div {
     font-size: 47px;
     color: #802e88;
 }
+.titles__first__black {
+    color: #f8f0e4;
+    cursor: default;
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 25px;
+    font-family:'Grechen Fuemen', cursive;
+    font-size: 47px;
+}
 
-.titles h1 {
+.titles__last{
     cursor: default;
     padding-top: 25px;
     margin: 0 auto;
@@ -125,6 +151,17 @@ div {
     font-family:'Gluten', cursive;
     font-size: 75px;
 }
+
+.titles__last__black {
+    cursor: default;
+    padding-top: 25px;
+    margin: 0 auto;
+    width: 80%;
+    color: #f8f0e4;
+    font-family:'Gluten', cursive;
+    font-size: 75px;
+}
+
 
 .section {
     padding: 40px 0;
@@ -166,6 +203,10 @@ div {
 
 .adapt {
     width: 80%;
+}
+
+.adapt__color {
+    background-color: #ffff85;
 }
 .title-code h2 {
     width: 20%;
@@ -237,7 +278,7 @@ div {
 
 .work__project .work-item h3 {
     width: 80%;
-    position: relative;
+    position: static;
     margin-top: 20px;
     font-family: 'Merriweather', serif;
     font-size: 18px;
@@ -306,4 +347,37 @@ div {
 #menu__toggle, 
 .menu__box {
     display: none;
+}
+
+.change__fone {
+    position: fixed;
+    top: 150px;
+    left: 1000px;
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-image: url("./assets/png/icons8-убывающий-месяц-48.png");
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    background-position-x: center;
+    background-position-y: center;
+    transition: all 0.2s;
+    border-radius: 50%;
+  -webkit-transition: -webkit-transform .7s ease-in-out;
+          transition:         transform .7s ease-in-out;
+}
+
+.change__fone:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.dark__times {
+    background-color: #1D262D;
+    color: #f8f0e4;
+}
+
+.lite__times {
+    background-color: #ffff85;
+    color: #802e88;
 }
