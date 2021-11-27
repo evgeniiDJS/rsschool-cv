@@ -1,8 +1,15 @@
 import { changeTimesDark } from './js/changeTimesDark.js';
 
-changeTimesDark();
+try {
+    changeTimesDark();
+    hljs.initHighlightingOnLoad();
+}
+catch(err) {
+    console.err(err)
+}
 
-hljs.initHighlightingOnLoad();
+
+
 
 
 
