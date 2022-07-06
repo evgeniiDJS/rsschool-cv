@@ -227,6 +227,19 @@
         width: 100%;
         height: 15vh;
     }
+
+    .icon__pro--portfolio {
+        border-radius: 50%;
+        width: 100%;
+        height: 15vh;
+    }
+
+    .icon__pro--react-app {
+        border-radius: 50%;
+        width: 100%;
+        height: 15vh;
+    }
+
     .nav {
         display: none;
     }

@@ -300,6 +300,17 @@ div {
     width: 100%;
     height: 35vh;
 }
+.icon__pro--react-app{
+    background-image: url("./assets/png/React-app.png");
+    background-repeat: no-repeat;
+    border-radius: 8%;
+    background-size: 100% 100%;
+    background-position-x: center;
+    background-position-y: center;
+    display: block;
+    width: 100%;
+    height: 35vh;
+}
 
 .work__project .work-item h3 {
     width: 80%;
