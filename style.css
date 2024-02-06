@@ -121,18 +121,39 @@ div {
     margin: 0 auto;
     background-repeat: no-repeat;
     border-radius: 50%;
-    background-size: 100% 100%;
-    background-position-x: center;
-    background-position-y: center;
-    display: block;
-    width: 25%;
-    height: 40vh;
-    box-shadow: 0px 0px 10px #443d44;
-    transition: 2s;
+    width: 600px;
+    height: 300px;
 }
 
-.avatars:hover {
-    box-shadow: 0px 15px 90px #443d44;
+.avatars-color {
+    animation: color-change 80s infinite;
+}
+  
+@keyframes color-change {
+    0% { background-color: #ffff85; }
+    50% { background-color: #802e88; }
+    100% { background-color:#ffff85; }
+}
+
+#inner-circle {
+    position: absolute;
+    background: #802e88;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    top: 30%;
+    left: 50%;
+    margin: -24px 0px 0px -5px;
+}
+.inner-circle_2 {
+    position: absolute;
+    background: #802e88;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    top: 50%;
+    left: 40%;
+    margin: -24px 0px 0px -5px;
 }
 
 .titles__first {
