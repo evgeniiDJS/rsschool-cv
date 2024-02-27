@@ -154,7 +154,8 @@
     }
 
     .avatars {
-        display: none;
+        display: block;
+        width: 100%;
     }
 
     .titles {
