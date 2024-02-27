@@ -120,10 +120,8 @@ div {
 
 .avatars {
     background: #020202;
-    
-    
+    z-index: 1;
     margin: 0 auto;
-    
     border-radius: 50%;
     width: 600px;
     height: 300px;
@@ -462,7 +460,8 @@ div {
 }
 
 #menu__toggle, 
-.menu__box {
+.menu__box { 
+    z-index: 99;
     display: none;
 }
 

@@ -155,7 +155,13 @@
 
     .avatars {
         display: block;
-        width: 100%;
+        width: 150px;
+        height: 100px;
+        z-index: 1;
+    }
+
+    .title-code {
+        display: none;
     }
 
     .titles {
@@ -301,6 +307,7 @@
 
     /* контейнер меню */
     .menu__box {
+        z-index: 99;
         display: block;
         position: fixed;
         visibility: hidden;
@@ -317,9 +324,11 @@
     }
 
     .menu__box li a {
+        z-index: 99;
         color: #ffff85;
     }
     .menu__box li  {
+        z-index: 99;
         padding: 15px 0 ;
     }
     /* элементы меню */
@@ -332,6 +341,7 @@
         text-decoration: none;
     }
     .menu__item:hover {
+        z-index: 99;
         background-color: #802e88;
     }
 
@@ -347,6 +357,7 @@
         transform: rotate(90deg);
     }
     #menu__toggle:checked ~ .menu__box {
+        z-index: 99;
         visibility: visible;
         left: 0;
     }
@@ -357,10 +368,11 @@
     transition-duration: .25s;
     }
     .menu__box {
-    transition-duration: .25s;
+        z-index: 99;
+        transition-duration: .25s;
     }
     .menu__item {
-    transition-duration: .25s;
+        transition-duration: .25s;
     }
     
 }
