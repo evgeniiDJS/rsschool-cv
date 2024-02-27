@@ -153,11 +153,15 @@
         margin: 0 auto;
     }
 
+    .change__fone {
+        display: none;
+    }
+
     .avatars {
         display: block;
         width: 150px;
         height: 100px;
-        z-index: 1;
+        z-index: -99;
     }
 
     .title-code {
