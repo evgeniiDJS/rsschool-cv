@@ -266,6 +266,12 @@
         height: 15vh;
     }
 
+    .icon__pro--building{
+        border-radius: 50%;
+        width: 100%;
+        height: 15vh;
+    }
+
     .nav {
         display: none;
     }
